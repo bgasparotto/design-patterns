@@ -18,7 +18,7 @@ public class SystemInfo {
 	 */
 	private SystemInfo() {
 		operationalSystemName = System.getProperty("os.name");
-		javaVersion = System.getProperty("");
+		javaVersion = System.getProperty("java.version");
 	}
 
 	/**
