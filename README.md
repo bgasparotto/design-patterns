@@ -15,6 +15,7 @@ The patterns are organised into packages in a way that each package contains all
 So far, the following patterns are available:
 
  - Builder
+ - Singleton
  - Null Object
 
 There are more on the way!
