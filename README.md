@@ -4,7 +4,7 @@ Repository containing Java source code which implements different design pattern
 
 This repository is part of the posts explaining the individual design patterns published in my blog, the summary can be found on the URL below:
 
-[Design Patterns - bgasparotto](https://bgasparotto.com/design-patterns)
+[Spring Boot Hello World - bgasparotto](https://bgasparotto.com/spring-boot-hello-world/)
 
 ### Organisation
 
