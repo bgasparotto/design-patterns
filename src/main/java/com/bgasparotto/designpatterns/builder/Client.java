@@ -11,40 +11,25 @@ import java.util.Set;
 public class Client {
     private Customer customer;
 
-    /**
-     * Instantiates a customer avoiding the use of the pattern.
-     */
     private void noArgumentsWithoutBuilder() {
         customer = new Customer("Bruno");
     }
 
-    /**
-     * Instantiates a customer using the pattern.
-     */
     private void noArgumentsWithBuilder() {
         CustomerBuilder builder = new CustomerBuilderImpl("Bruno");
         customer = builder.build();
     }
 
-    /**
-     * Instantiates a customer avoiding the use of the pattern plus setting a city name.
-     */
     private void oneExtraArgumentWithoutBuilder() {
         customer = new Customer("Bruno");
         customer.setCity("Sao Paulo");
     }
 
-    /**
-     * Instantiates a customer using the pattern plus setting a city name.
-     */
     private void oneExtraArgumentWithBuilder() {
         CustomerBuilder builder = new CustomerBuilderImpl("Bruno");
         customer = builder.fromCity("Sao Paulo").build();
     }
 
-    /**
-     * Instantiates a customer avoiding the use of the pattern plus setting a city name and adding a phone number.
-     */
     private void allArgumentsWithoutBuilder() {
         customer = new Customer("Bruno");
         customer.setCity("Sao Paulo");
@@ -54,19 +39,11 @@ public class Client {
         phones.add(mobile);
     }
 
-    /**
-     * Instantiates a customer using the pattern plus setting a city name and adding a phone number.
-     */
     private void allArgumentsWithBuilder() {
         CustomerBuilder builder = new CustomerBuilderImpl("Bruno");
         customer = builder.fromCity("Sao Paulo").hasPhone("999999999").build();
     }
 
-    /**
-     * Runs every instantiation example printing the result to the console.
-     *
-     * @param args args
-     */
     public static void main(String[] args) {
         Client client = new Client();
 

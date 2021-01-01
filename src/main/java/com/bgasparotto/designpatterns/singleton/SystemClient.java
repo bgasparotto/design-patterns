@@ -1,7 +1,10 @@
 package com.bgasparotto.designpatterns.singleton;
 
 /**
- * A client class for {@code SystemInfo} testing.
+ * <p> Client class for {@code SystemInfo} testing.
+ *
+ * <p> This class has a {@code main} method in order to run code for studying purposes, it shouldn't be taken as a
+ * reference for object-oriented paradigm besides the design pattern demonstration.
  */
 public class SystemClient {
     public static void main(String[] args) throws Exception {
